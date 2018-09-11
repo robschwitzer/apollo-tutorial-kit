@@ -7,6 +7,9 @@ const resolvers = {
     },
     allAuthors(_, args) {
       return Author.findAll()
+    },
+    getFortuneCookie() {
+      return FortuneCookie.getOne()
     }
   },
   Author: {
